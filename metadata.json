@@ -1,0 +1,6 @@
+{
+  "name": "Grant Radar ID",
+  "description": "Bilingual (ID/EN) research grant database, guideline search engine, automated email alert digest system, and application pipeline tracker for Health, Social Sciences, and Road Safety across Indonesian (BIMA Kemdiktisaintek, Hiliriset, LPDP, BRIN, UGM) and international (WHO, HSP, UKRI, CDC, NIH/USA, ASEAN, Wellcome) funders.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

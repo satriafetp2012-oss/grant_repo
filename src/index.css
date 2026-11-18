@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --paper: #EFF2F0;
+  --surface: #FFFFFF;
+  --surface-2: #F7F9F8;
+  --ink: #0F1F1B;
+  --ink-2: #33443E;
+  --muted: #61726C;
+  --faint: #8B9A94;
+  --line: #D6DEDA;
+  --line-soft: #E6ECE9;
+  --accent: #0B5D51;
+  --accent-soft: #E0EDE9;
+  --accent-line: #B6D4CD;
+  --warn: #9A6208;
+  --warn-soft: #F7EEDC;
+  --warn-line: #E3CFA4;
+  --crit: #9C3325;
+  --crit-soft: #F8E9E6;
+  --crit-line: #E5C1BA;
+  --info: #27556F;
+  --info-soft: #E5EEF3;
+  --info-line: #BDD3DF;
+  color-scheme: light;
+}
+
+.dark {
+  --paper: #0B1412;
+  --surface: #111C19;
+  --surface-2: #16221F;
+  --ink: #E4EDE9;
+  --ink-2: #C2D0CB;
+  --muted: #93A49E;
+  --faint: #6E807A;
+  --line: #243330;
+  --line-soft: #1C2A27;
+  --accent: #54C4AC;
+  --accent-soft: #132E29;
+  --accent-line: #26514A;
+  --warn: #E2A54A;
+  --warn-soft: #2C2415;
+  --warn-line: #4E3E1E;
+  --crit: #E5867A;
+  --crit-soft: #2E1A17;
+  --crit-line: #553029;
+  --info: #7FB3CE;
+  --info-soft: #152730;
+  --info-line: #28495A;
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    background-color: var(--paper);
+    color: var(--ink);
+    font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: "Archivo", "Public Sans", sans-serif;
+    letter-spacing: -0.012em;
+    text-wrap: balance;
+  }
+
+  .font-mono, .tabular-nums {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
